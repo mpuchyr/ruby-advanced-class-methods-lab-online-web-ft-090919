@@ -22,18 +22,6 @@ class Song
     song
   end
   
-  def self.create_by_name(name)
-    song = self.new_by_name(name)
-    song.save
-  end
-  
-  def find_by_name(name)
-    @@all.each do |song|
-      if song.name.include?(name)
-        return song
-      end
-    end
-  end
   
   
 
