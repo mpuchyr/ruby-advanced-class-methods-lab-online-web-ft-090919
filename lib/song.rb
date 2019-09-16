@@ -27,6 +27,14 @@ class Song
     song.save
   end
   
+  def find_by_name(name)
+    @@all.each do |song|
+      if song.name.include?(name)
+        return song
+      end
+    end
+  end
+  
   
 
 end
